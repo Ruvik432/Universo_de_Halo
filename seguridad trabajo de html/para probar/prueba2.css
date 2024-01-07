@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: bisque;
+}
+h1{
+    font-size: 3rem;
+    text-align: center;
+    color: #474747;
+    text-shadow: 1px 7px 10px;
+    text-transform: capitalize;
+}
+
+nav{
+    background: rgba(3, 3, 3, 0.822);
+    height: 80px ;
+    width:100% ;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.Enlace{
+    position: absolute;
+    padding: 8px 50px ;
+}
+
+.logo{
+    height: 50px;
+}
+nav ul{
+    z-index: 6;
+ float: right ;  
+  margin-right: 20px;
+}
+nav ul li{
+    display:inline-block ;
+    line-height: 50px;
+    margin: 0 5px;
+    padding: 7px 0;
+}
+nav ul li a{
+    color: white;
+    text-transform: uppercase;
+    text-shadow: red  2px 2px 5px;
+}
+li a.active, li a:hover{
+    background: rgb(231, 22, 22) ;
+    transition: 1s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    float: right;
+    line-height: 50px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+/* FIn de la cabecera */
+/* Inicio de lo demas */
+
+.flex-contenendor{
+    display: flex;
+    border: 5px solid black;
+    background-color: #ccc;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    flex-flow: row wrap;
+}
+.card{
+    border: 5px solid rgb(75, 74, 74);
+    background-color: white;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: 2rem 1rem;
+    width: 280px;
+    height: 360px;
+    position: relative;
+    margin: 5px;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0,0.5);
+    transition: 0.5s ease-in-out;
+    flex-direction: column;
+}
+.card:hover{
+    transform: translateY(30px);
+}
+.card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+.card:hover::before{
+    opacity: 1;
+}
+.card-header img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    }
+.card-contenido{
+position: relative;
+z-index: 3;
+color: #fff;
+opacity: 0;
+transform: translateY(30px);
+transition: .5s all;
+}
+.card-contenido:hover{
+    opacity: 1;
+    transform: translateY(0);
+}
+.card-contenido h2{
+    margin: 0;
+}
+.card-contenido p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+.card-contenido .btn{
+    text-decoration: none;
+    padding: 0.5rem .9rem;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.card-contenido .btn:hover{
+    box-shadow: 0px 7px 10px rgba(0, 0, 0,0.5); 
+}
+@media screen and (min-width:1300px) and (max-width:4000px) {
+    .Enlace{
+        padding-left: 20px;
+        }
+        nav ul li a{
+            font-size: 1rem ;
+        }
+        .logo{
+        height: 50px;
+        }
+    }
+    @media screen and (min-width:250px) and (max-width:750px) {
+        .checkbtn{
+            display: block;
+        }
+        ul{
+            position: fixed;
+            width: 40%;
+            height: 100vh;
+            background: rgb(80, 80, 80);
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s ;
+            border: 3px solid black;
+            border-radius: 5px;
+        }
+        nav ul li{
+          display: block;  
+          margin: 50px 0;
+          line-height: 30px;
+        }
+        nav ul li a{
+            font-size: .8rem;
+        }
+        li a:hover, li a.active{
+            background: none;
+            color: red;
+        }
+        #check:checked ~ ul{
+            left: 0;
+        }
+    }

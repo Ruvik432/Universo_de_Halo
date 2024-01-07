@@ -1,0 +1,467 @@
+
+/* Aqui va la Font Family */
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;600;700&family=Gloria+Hallelujah&family=Kalam:wght@300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700;800&family=Rubik+Glitch&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Montserrat:wght@200;300;400;600;700;800&display=swap');
+
+/* Configuración General */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: rgb(105, 101, 101); */
+    /* border: 1px solid red; */
+    text-decoration: none;
+    list-style:none ;
+}
+
+
+h3{
+
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Rubik Glitch', system-ui;
+    color: #95cdf0;
+    text-shadow: red  3px 3px 6px;
+}
+h3:hover{
+    color: rgb(168, 53, 53);
+    transition: .5s;
+    text-shadow: #95cdf0  3px 3px 6px;
+}
+
+
+/* La Cabecera y su Nav */
+
+
+
+
+.cabecera{
+    font-size: 0.9rem;
+}
+
+/*.cabecera_caja{
+    background-color: black;
+    width: 15%;
+    margin: 0 auto;
+}*/
+
+nav{
+    background: rgba(3, 3, 3, 0.822);
+    height: 80px ;
+    width:100% ;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.Enlace{
+    position: absolute;
+    padding: 8px 50px ;
+}
+
+.logo{
+    height: 50px;
+}
+nav ul{
+ float: right ;  
+  margin-right: 20px;
+}
+nav ul li{
+    display:inline-block ;
+    line-height: 50px;
+    margin: 0 5px;
+    padding: 7px 0;
+}
+nav ul li a{
+    color: white;
+    text-transform: uppercase;
+    text-shadow: red  2px 2px 5px;
+}
+li a.active, li a:hover{
+    background: rgb(231, 22, 22) ;
+    transition: 1s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    float: right;
+    line-height: 50px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+ /* El cuerpo de la descripción */
+body{
+background-color: #02050591;
+}
+
+.Art1{
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    color: white;
+    font-size: 0.9rem;
+}
+.Art2{
+    padding: 6px;
+    margin: 6px;
+    font-size: 2.5rem;
+    width: 55%;
+    float: left;
+    height: 600px;
+}
+ /* div{
+    border: 1px solid black;
+    
+} */
+/* article{
+    border: 5px solid black;
+    border-radius: 5px;
+    background-color: rgb(77, 95, 95);
+    margin: 5px;
+} */
+.imgL{
+    width: 30%;
+    float: left;
+    height: 600px;
+    border-radius: 5px;
+    margin-left: 5px;
+    border: 4px solid black;
+    box-shadow: cyan 2px 2px 5px;
+    border-radius: 5px;
+
+}
+.Art3{
+    padding: 5px;
+    margin: 5px;
+    font-size: 2.9rem;
+    height: 600px;
+    width: 55%;
+    float: right;
+    
+}
+.imgS{
+    width: 30%;
+    float: left;
+    height: 600px;
+    margin-left: 5px;
+    border: 4px solid black;
+    box-shadow: cyan 2px 2px 5px;
+    border-radius: 5px;
+
+}
+.Art4
+{
+    padding: 5px;
+    margin: 5px;
+    font-size: 2rem;
+    height: 600px;
+    width: 55%;
+    float: left;
+}
+.imgP{
+    width: 30%;
+    float: left;
+    height: 600px;
+    margin-left: 5px;
+    border: 4px solid black;
+    box-shadow: cyan 2px 2px 5px;
+    border-radius: 5px;
+
+}
+
+.Art5{
+    padding: 5px;
+    margin: 5px;
+    font-size: 2rem;
+    height: 600px;
+    width: 55%;
+    float: right;    
+}
+
+ .imgC{
+    width: 30%;
+    float: left;
+    height:600px;
+    margin-left: 5px;
+    border: 4px solid black;
+    box-shadow: cyan 2px 2px 5px;
+    border-radius: 5px;
+
+}
+legend{
+    color: rgb(143, 8, 170);
+    font-weight: bold;
+    text-shadow: magenta 2px 2px 2px;
+}
+
+.Formulario{
+    width: 50%;
+    float: left;
+padding-left: 5px;
+}
+.Form_1{
+    background-color: rgb(158, 157, 157);
+    color: yellow;
+    border: 2.5px solid black;
+    border-radius: 5px;
+    box-shadow: rgb(215, 250, 16) 3px 3px 6px;
+    padding: 7px;
+    margin: 5px;
+}
+/* final del cuerpo */
+/* inicio de float */
+
+
+@media screen and (min-width:1300px) and (max-width:4000px) {
+    .Enlace{
+        padding-left: 20px;
+        }
+        nav ul li a{
+            font-size: 1rem ;
+        }
+        .logo{
+        height: 50px;
+        }
+    
+        .Art2{
+        width: 70%;
+        font-size: 1.9rem;
+        /* float: none; */
+        }
+        .imgL{
+        width: 20%;
+        margin: 5px;
+        /* float: none; */
+        }
+        .Art3{
+        width: 70%;
+        /* float: none; */
+        font-size: 1.9rem;
+        }
+        .imgS{
+        width: 20%;
+        margin: 5px;
+        /* float: none; */
+        }
+        .Art4{
+        width:70%;
+        font-size: 1.9rem;
+        /* float: none; */
+        }
+        .imgP{
+        width: 20%;
+        /* float: none; */
+        }
+        .Art5{
+        width: 70%;
+        font-size: 1.9rem;
+        /* float: none; */
+        }
+        .imgC{
+        width: 20%;
+        /* float: none; */
+        }
+    
+        .Formulario{
+        width: 100%;
+        float: none;
+        background-color: none;
+        overflow: hidden;
+        }
+        .Form_1{
+            font-size: 1.2rem;
+        }
+    
+}
+
+@media screen and (min-width:750px) and (max-width:1300px) {
+    .Art1{
+        font-size: 1.2rem;
+        margin: 0 10px;
+    }
+
+    .Art2{
+    width: 90%;
+    font-size: 1.6rem;
+    height: 550px;
+    margin: 0 30px;
+    text-align: justify;
+    float: none;
+    }
+    .imgL{
+    width: 80%;
+    margin: 0 65px;
+    height: 600px;
+    float: none;
+    
+    }
+    .Art3{
+    width: 90%;
+    font-size: 1.9rem;
+    height: 450px;
+    text-align: justify;
+    margin: 0 30px;
+    float: none;
+    }
+    .imgS{
+    width: 80%;
+    margin: 0 60px;
+    float: none;
+    }
+    .Art4{
+    width:90%;
+    font-size: 1.8rem;
+    height: 525px;
+    text-align: justify;
+    margin: 0 30px;
+    float: none;
+    }
+    .imgP{
+    width: 80%;
+    margin: 0 65px;
+    
+    }
+    .Art5{
+    width: 90%;
+    font-size: 1.8rem;
+    height: 440px;
+    text-align: justify;
+    margin: 0 30px;
+    }
+    .imgC{
+    width: 80%;
+    margin: 0 65px;
+    }
+    .Formulario{
+        width: 100%;
+        float: none;
+        background-color: none;
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width:250px) and (max-width:750px) {
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 40%;
+        height: 100vh;
+        background: rgb(80, 80, 80);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s ;
+        border: 3px solid black;
+        border-radius: 5px;
+    }
+    nav ul li{
+      display: block;  
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+        font-size: .8rem;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .Art2{
+        width: 100%;
+        font-size: 1.1rem;
+        height: 550px;
+    }
+    .imgL{
+        width: 100%;
+        height: 450px;
+        
+    }
+    .Art3{
+        width: 100%;
+        font-size: 1.3rem;
+        height: 390px;
+    }
+    .imgS{
+        width: 100%;
+    }
+    .Art4{
+        width:100%;
+        font-size: 1.2rem;
+        height: 455px;
+    }
+    .imgP{
+        width: 100%;
+    }
+    .Art5{
+        width: 100%;
+        font-size: 1.2rem;
+        height: 350px;
+    }
+    .imgC{
+        width: 100%;
+    }
+    .Formulario{
+        width: 100%;
+        float: none;
+        background-color: none;
+        overflow: hidden;
+    }
+
+}
+/* pie */
+.pie{
+    background-color: rgba(0, 0, 0, 0.801); 
+    color: white;
+    float: right;
+    width: 100%;
+    height: 150px;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 15px;
+ }
+.pie_ul{
+    color: white;
+}
+a i{
+transition: .3s;
+    color: rgb(17, 105, 17);
+    font-size: 25px;
+    padding: 5px;
+}
+.icons i:hover{
+    transform: scale(1.4);
+    color: #95cdf0;
+}
+/* Fin de Pie */
+/*nav, ul, li, a{
+text-decoration: none;
+list-style: none;
+color: white;
+border: 1px solid black;
+}*/
+/*.imgLogo{
+    width: 150px;
+    height: 180px;
+    padding: 0, auto;
+}
+
+/* IMAGENES */
+
+/*img{
+    width: 150px;
+}
